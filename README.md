@@ -29,3 +29,4 @@ The last part is to communicate with our api using HTTP GET Requests and display
 * run `npm install @material-ui/core`
 * run `npm install @material-ui/icons`
 * run `npm start`
+* go to <http://localhost:3000/>
