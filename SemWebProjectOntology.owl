@@ -1,0 +1,524 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/azzou/ontologies/2020/11/untitled-ontology-4#"
+     xml:base="http://www.semanticweb.org/azzou/ontologies/2020/11/untitled-ontology-4"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/azzou/ontologies/2020/11/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#time -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#time"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.org/properties/#AgencyHasRoute -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/properties/#AgencyHasRoute">
+        <rdfs:domain rdf:resource="http://www.example.org/classes/#Agency"/>
+        <rdfs:range rdf:resource="http://www.example.org/classes/#Route"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/properties/#BelongsToStation -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/properties/#BelongsToStation">
+        <rdfs:domain rdf:resource="http://www.example.org/classes/#StopPoint"/>
+        <rdfs:range rdf:resource="http://www.example.org/classes/#StopArea"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/properties/#HasGeoPoint -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/properties/#HasGeoPoint">
+        <rdfs:domain rdf:resource="http://www.example.org/classes/#StopArea"/>
+        <rdfs:domain rdf:resource="http://www.example.org/classes/#StopPoint"/>
+        <rdfs:range rdf:resource="https://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/properties/#HasStopPoint -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/properties/#HasStopPoint">
+        <rdfs:domain rdf:resource="http://www.example.org/classes/#StopArea"/>
+        <rdfs:range rdf:resource="http://www.example.org/classes/#StopPoint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/properties/#RouteHasAgency -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/properties/#RouteHasAgency">
+        <rdfs:domain rdf:resource="http://www.example.org/classes/#Route"/>
+        <rdfs:range rdf:resource="http://www.example.org/classes/#Agency"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/properties/#ServiceHasTrip -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/properties/#ServiceHasTrip">
+        <rdfs:domain rdf:resource="http://www.example.org/classes/#Service"/>
+        <rdfs:range rdf:resource="http://www.example.org/classes/#Trip"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/properties/#StopHasStopPoint -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/properties/#StopHasStopPoint">
+        <rdfs:domain rdf:resource="http://www.example.org/classes/#Stop"/>
+        <rdfs:range rdf:resource="http://www.example.org/classes/#StopPoint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/properties/#StopHasTrip -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/properties/#StopHasTrip">
+        <rdfs:domain rdf:resource="http://www.example.org/classes/#Stop"/>
+        <rdfs:range rdf:resource="http://www.example.org/classes/#Trip"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/properties/#TripHasService -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/properties/#TripHasService">
+        <rdfs:domain rdf:resource="http://www.example.org/classes/#Trip"/>
+        <rdfs:range rdf:resource="http://www.example.org/classes/#Service"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/properties/#TripHasStop -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/properties/#TripHasStop">
+        <rdfs:domain rdf:resource="http://www.example.org/classes/#Trip"/>
+        <rdfs:range rdf:resource="http://www.example.org/classes/#Stop"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.org/properties/#AgencyHasLanguage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/properties/#AgencyHasLanguage">
+        <rdfs:domain rdf:resource="http://www.example.org/classes/#Agency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/properties/#AgencyHasTimeZone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/properties/#AgencyHasTimeZone"/>
+    
+
+
+    <!-- http://www.example.org/properties/#AgencyHasURL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/properties/#AgencyHasURL">
+        <rdfs:domain rdf:resource="http://www.example.org/classes/#Agency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/properties/#HasRouteType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/properties/#HasRouteType">
+        <rdfs:domain rdf:resource="http://www.example.org/classes/#Route"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/properties/#RouteHasColor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/properties/#RouteHasColor">
+        <rdfs:domain rdf:resource="http://www.example.org/classes/#Route"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/properties/#RouteHasShortName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/properties/#RouteHasShortName">
+        <rdfs:domain rdf:resource="http://www.example.org/classes/#Route"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/properties/#StopHasArrivalTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/properties/#StopHasArrivalTime">
+        <rdfs:domain rdf:resource="http://www.example.org/classes/#Stop"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/properties/#StopHasDeparatureTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/properties/#StopHasDeparatureTime">
+        <rdfs:domain rdf:resource="http://www.example.org/classes/#Stop"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/properties/#StopHasStopSequence -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/properties/#StopHasStopSequence">
+        <rdfs:domain rdf:resource="http://www.example.org/classes/#Stop"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/properties/#TripHasDirection -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/properties/#TripHasDirection">
+        <rdfs:domain rdf:resource="http://www.example.org/classes/#Trip"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/properties/#TripHasHeadSign -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/properties/#TripHasHeadSign">
+        <rdfs:domain rdf:resource="http://www.example.org/classes/#Trip"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:domain rdf:resource="http://www.example.org/classes/#Agency"/>
+        <rdfs:domain rdf:resource="http://www.example.org/classes/#OCECar"/>
+        <rdfs:domain rdf:resource="http://www.example.org/classes/#OCETrain"/>
+        <rdfs:domain rdf:resource="http://www.example.org/classes/#OCETramtrain"/>
+        <rdfs:domain rdf:resource="http://www.example.org/classes/#Route"/>
+        <rdfs:domain rdf:resource="http://www.example.org/classes/#StopArea"/>
+        <rdfs:domain rdf:resource="http://www.example.org/classes/#StopPoint"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.w3.org/2003/01/geo/wgs84_pos#lat -->
+
+    <owl:DatatypeProperty rdf:about="https://www.w3.org/2003/01/geo/wgs84_pos#lat">
+        <rdfs:domain rdf:resource="https://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.w3.org/2003/01/geo/wgs84_pos#long -->
+
+    <owl:DatatypeProperty rdf:about="https://www.w3.org/2003/01/geo/wgs84_pos#long">
+        <rdfs:domain rdf:resource="https://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.org/classes/#Agency -->
+
+    <owl:Class rdf:about="http://www.example.org/classes/#Agency"/>
+    
+
+
+    <!-- http://www.example.org/classes/#OCECar -->
+
+    <owl:Class rdf:about="http://www.example.org/classes/#OCECar">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/classes/#StopPoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/classes/#OCETrain -->
+
+    <owl:Class rdf:about="http://www.example.org/classes/#OCETrain">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/classes/#StopPoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/classes/#OCETramtrain -->
+
+    <owl:Class rdf:about="http://www.example.org/classes/#OCETramtrain">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/classes/#StopPoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/classes/#Route -->
+
+    <owl:Class rdf:about="http://www.example.org/classes/#Route"/>
+    
+
+
+    <!-- http://www.example.org/classes/#Service -->
+
+    <owl:Class rdf:about="http://www.example.org/classes/#Service"/>
+    
+
+
+    <!-- http://www.example.org/classes/#Stop -->
+
+    <owl:Class rdf:about="http://www.example.org/classes/#Stop">
+        <rdfs:subClassOf rdf:resource="https://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/classes/#StopArea -->
+
+    <owl:Class rdf:about="http://www.example.org/classes/#StopArea"/>
+    
+
+
+    <!-- http://www.example.org/classes/#StopPoint -->
+
+    <owl:Class rdf:about="http://www.example.org/classes/#StopPoint">
+        <rdfs:subClassOf rdf:resource="https://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/classes/#Trip -->
+
+    <owl:Class rdf:about="http://www.example.org/classes/#Trip"/>
+    
+
+
+    <!-- https://www.w3.org/2003/01/geo/wgs84_pos#Point -->
+
+    <owl:Class rdf:about="https://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.org/agencies/#OCENI -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/agencies/#OCENI">
+        <rdf:type rdf:resource="http://www.example.org/classes/#Agency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/agencies/#OCERRR_MidiPy -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/agencies/#OCERRR_MidiPy">
+        <rdf:type rdf:resource="http://www.example.org/classes/#Agency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/agencies/#OCESN -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/agencies/#OCESN">
+        <rdf:type rdf:resource="http://www.example.org/classes/#Agency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/agencies/#STAS -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/agencies/#STAS">
+        <rdf:type rdf:resource="http://www.example.org/classes/#Agency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/routes/#route_id -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/routes/#route_id">
+        <rdf:type rdf:resource="http://www.example.org/classes/#Route"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/stopareas/#stoparea_id -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/stopareas/#stoparea_id">
+        <rdf:type rdf:resource="http://www.example.org/classes/#StopArea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/stoppoints/#OCECar_id -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/stoppoints/#OCECar_id">
+        <rdf:type rdf:resource="http://www.example.org/classes/#OCECar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/stoppoints/#OCETrain_id -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/stoppoints/#OCETrain_id">
+        <rdf:type rdf:resource="http://www.example.org/classes/#OCETrain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/stoppoints/#OCETramtrain_id -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/stoppoints/#OCETramtrain_id">
+        <rdf:type rdf:resource="http://www.example.org/classes/#OCETramtrain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/stoppoints/#STAS_id -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/stoppoints/#STAS_id">
+        <rdf:type rdf:resource="http://www.example.org/classes/#StopPoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/stoppoints/#stoppoint_id -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/stoppoints/#stoppoint_id">
+        <rdf:type rdf:resource="http://www.example.org/classes/#StopPoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/stops/#stop_id -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/stops/#stop_id">
+        <rdf:type rdf:resource="http://www.example.org/classes/#Stop"/>
+        <rdfs:comment xml:lang="en">An instance of a stop one &quot;occurence of stopping&quot; made by the mean of transportation doing, a particular trip, that at a stop-point.
+stop_id=trip_id+HHMM+&quot;-seq&quot;+sequence_number
+HHMM come from arrival time (HH:MM:SS^^xsd:time)
+sequence number is the order of the stop-point in the sequence of stop-point relative to a trip.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/trips/#trip_id -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/trips/#trip_id">
+        <rdf:type rdf:resource="http://www.example.org/classes/#Trip"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
