@@ -13,6 +13,8 @@ In the first part, we parsed data from different CSV files (SNCF and STAS) and p
 * Create a graph in jena called **data**
 * Run the main in the **getData** java file in **com.semweb.dataIngestion** package.
 
+There has been a problem in the upload of the api folder, we didn't see it until after midnight. We hope it's ok. Here's the new link <https://github.com/ZkaraChaimae/api>
+
 ## PART TWO : CREATING THE API
 For us to exploit our persisted data, we created an api using spring framework. To start the api, you should run the class **ProjectApi1Application** as a spring boot application. Then test the api using Postman. Here are the GET requests we implemented :
 
